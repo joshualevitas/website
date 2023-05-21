@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader'
 
 
-const Computers = () => {
+const Computers = ({ isMobile }) => {
   const computer = useGLTF('/retro_computer/scene.gltf')
   return (
     <mesh>
@@ -13,9 +13,9 @@ const Computers = () => {
       <spotLight position={[-20, 50, 10]} angle={0.12}/>
       <primitive 
         object={computer.scene} 
-        scale={.05} 
-        position={[0, -3.25, -1.5]}
-        rotation={[-.01, 0, 0]}
+        scale={isMobile ? .04 : .05} 
+        position={isMobile ? [0, -3, -2.2] : [1, -2.25, -1.5]}
+        rotation={[0, 1, 0]}
        
       />
     </mesh>
@@ -23,12 +23,28 @@ const Computers = () => {
 }
 
 const ComputersCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 500px)');
+    setIsMobile(mediaQuery.matches);
+    
+    const handleMediaQueryChange = (e) => {
+      setIsMobile(e.matches);
+    }
+
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+    }
+
+  }, [])
 
   return (
     <Canvas frameloop='demand' shadows camera={{ position: [20, 3, 5], fov:25 }} gl={{ preserveDrawingBuffer: true}}>
       <Suspense fallback={<CanvasLoader/>}>
         <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2}/>
-        <Computers />
+        <Computers isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
