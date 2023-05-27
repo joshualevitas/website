@@ -7,19 +7,20 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+// tech
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+
+import python from "./tech/python.png";
+import c from "./tech/c.png";
+import cpp from "./tech/cpp.png";
+import cs from "./tech/cs.png";
+import mysql from "./tech/mysql.png";
 
 import associated from "./company/associated.png";
 import meta from "./company/meta.png";
@@ -40,17 +41,11 @@ export {
   menu,
   close,
   css,
-  docker,
-  figma,
   git,
   html,
   javascript,
-  mongodb,
-  nodejs,
   reactjs,
-  redux,
   tailwind,
-  typescript,
   threejs,
   associated,
   meta,
@@ -59,4 +54,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  python,
+  c,
+  cpp,
+  cs,
+  mysql,
 };
+

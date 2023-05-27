@@ -4,18 +4,11 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
-    nodejs,
-    mongodb,
     git,
-    figma,
-    docker,
-    meta,
     mythical,
     northwestern,
     associated,
@@ -23,6 +16,12 @@ import {
     jobit,
     tripguide,
     threejs,
+    python,
+    c,
+    cpp,
+    cs,
+    mysql,
+
   } from "../assets";
   
   export const navLinks = [
@@ -61,6 +60,26 @@ import {
   
   const technologies = [
     {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "C",
+      icon: c,
+    },
+    {
+      name: "C++",
+      icon: cpp,
+    },
+    {
+      name: "C#",
+      icon: cs,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -72,30 +91,12 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    
     {
       name: "Tailwind CSS",
       icon: tailwind,
     },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
+    
     {
       name: "Three JS",
       icon: threejs,
@@ -104,14 +105,8 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    
+    
   ];
   
   const experiences = [
@@ -126,7 +121,7 @@ import {
         "Optimized Machine Learning pricing models within Mythical Marketplace (a web-based exchange to host transactions of NFT game items) using feature engineering to select, manipulate, and transform raw data model inputs",
         "Authored a database auditing system to regularly and automatically enforce data architecture convention compliance across more than 100 company CockroachDB databases",
       ],
-      iconSize: "70%"
+      iconSize: "60%"
     },
     {
       title: "Bioinformatics Intern",
@@ -185,9 +180,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Chorus",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based collaborative beat creation app. Users can share and edit music in real time with other users.",
       tags: [
         {
           name: "react",
