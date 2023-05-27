@@ -6,6 +6,5 @@
 ## To Do:
 
 - fix favicon 
-- fix about text
-- fix services in constants
+- fix services icons
 - fix tech section (maybe figure out why not wobbling)

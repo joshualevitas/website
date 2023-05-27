@@ -16,9 +16,9 @@ import {
     figma,
     docker,
     meta,
-    starbucks,
-    tesla,
-    shopify,
+    mythical,
+    northwestern,
+    associated,
     carrent,
     jobit,
     tripguide,
@@ -42,19 +42,19 @@ import {
   
   const services = [
     {
-      title: "[Statistical Language Modeling]",
+      title: "React JS Development",
       icon: web,
     },
     {
-      title: "[React JS]",
+      title: "Language Modeling",
       icon: mobile,
     },
     {
-      title: "[placeholder]",
+      title: "Natural Language Processing",
       icon: backend,
     },
     {
-      title: "[placeholder2]",
+      title: "Data Analysis",
       icon: creator,
     },
   ];
@@ -116,57 +116,44 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Data Analysis and Machine Learning Intern",
+      company_name: "Mythical Games",
+      icon: mythical,
+      iconBg: "#000000",
+      date: "July 2022 - September 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Supported software development efforts of decentralized gaming application using blockchain technology to build games where players can own the assets they develop or acquire on the EOSIO platform",
+        "Optimized Machine Learning pricing models within Mythical Marketplace (a web-based exchange to host transactions of NFT game items) using feature engineering to select, manipulate, and transform raw data model inputs",
+        "Authored a database auditing system to regularly and automatically enforce data architecture convention compliance across more than 100 company CockroachDB databases",
       ],
+      iconSize: "70%"
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Bioinformatics Intern",
+      company_name: "Shilatifard Laboratory, Northwestern Feinberg School of Medicine",
+      icon: northwestern,
+      iconBg: "#FFFFFF",
+      date: "April 2022 - June 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Worked under Dr. Marta Iwanaszko, a bioinformatician researching gene transciption using computational biology and integrating machine learning technology to help evaluate circadian biology",
+        " Implemented computational pipelines to process and analyze genomic sequencing data using Northwestern University's high performance computing cluster",
       ],
+      iconSize: "70%"
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Data Integration Intern",
+      company_name: "Associated Insurance and Risk Management Advisors",
+      icon: associated,
+      iconBg: "#FFFFFF",
+      date: "June 2020 - September 2020",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Analyzed policy underwriting data to identify trends and correlations",
+        "Assisted with the integration of third-party software systems and data sources into the company's technology stack",
+        "Created technical documentation and user manuals to train employees on new software",
       ],
+      iconSize: "70%"
     },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    // add more as they come :)
   ];
   
   const testimonials = [
